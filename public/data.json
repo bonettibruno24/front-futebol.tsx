@@ -1,0 +1,32 @@
+{
+    "tournaments": [
+      {
+        "id": "1",
+        "name": "Torneio 1",
+        "start_date": "2023-10-01T10:00:00",
+        "end_date": "2023-10-05T18:00:00",
+        "rules": "Regras do torneio 1",
+        "created_by": "1"
+      },
+      {
+        "id": "2",
+        "name": "Torneio 2",
+        "start_date": "2023-11-01T10:00:00",
+        "end_date": "2023-11-05T18:00:00",
+        "rules": "Regras do torneio 2",
+        "created_by": "1"
+      }
+    ],
+    "teams": [
+      {
+        "id": "1",
+        "tournament_id": "1",
+        "team_name": "Time A"
+      },
+      {
+        "id": "2",
+        "tournament_id": "1",
+        "team_name": "Time B"
+      }
+    ]
+  }
