@@ -1,4 +1,4 @@
-export async function createRecoveryPassword(email: string) {
+export async function createInvitePasswordRecovery(email: string) {
   const response = await fetch('http://localhost:3333/recovery-password', {
     method: 'POST',
     headers: {

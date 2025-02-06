@@ -6,7 +6,7 @@ import { toast } from 'sonner'
 
 export function LoginUser() {
   const [isLogin, setIsLogin] = useState(true)
-  const [isResetMode, setIsresetMode] = useState(true)
+  const [isResetMode, setIsresetMode] = useState(false)
   const [showResetModal, setShowResetModal] = useState(false)
   const [error, setError] = useState('')
 
@@ -16,7 +16,7 @@ export function LoginUser() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
-  const handleSubmit = (email: string) => {
+  const checkEmail = (email: string) => {
     const trimmedEmail = email.trim()
     console.log('E-mail inserido:', email)
     console.log('E-mail após trim:', trimmedEmail)
@@ -75,8 +75,8 @@ export function LoginUser() {
             setIsLogin={setIsLogin}
             error={error}
             email={email}
-            setEmail={setEmail}
-            handleSubmit={handleSubmit}
+           
+            
             isResetMode={isResetMode}
           />
         )}
